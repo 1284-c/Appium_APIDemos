@@ -87,11 +87,7 @@ public class Mobile_Gestures {
         }
     }
 
-    public void scroll_down(int x, int y){
-        TouchAction touchAction = new TouchAction(driver);
-        touchAction.tap(PointOption.point(x,y)).perform();
 
-    }
 
 
 }

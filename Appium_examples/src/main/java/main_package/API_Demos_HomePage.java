@@ -12,6 +12,11 @@ public class API_Demos_HomePage extends Mobile_Gestures{
     }
     @AndroidFindBy(accessibility ="Views")
     MobileElement views;
+    @AndroidFindBy(accessibility = "Lists")
+    MobileElement lists;
     public void clickViews(){click(views);}
+    public void swipetoList(){swipe(DIRECTION.DOWN);}
+    public void clickLists(){click(lists);}
+
 
     }
