@@ -6,11 +6,15 @@ import main_package.PreferencesPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Test_2 extends Base_Class{
+import java.net.MalformedURLException;
+
+public class PreferencesPage_TestCases extends Base_Class{
     API_Demos_HomePage api_demos_homePage;
     PreferencesPage preferencesPage;
     @Test
-    public void click_Preferences() throws InterruptedException{
+    public void click_Preferences() throws MalformedURLException, InterruptedException {
+        Android_setup();
+
         api_demos_homePage = new API_Demos_HomePage(appiumDriver);
         api_demos_homePage.clickpreferences();
         preferencesPage = new PreferencesPage(appiumDriver);

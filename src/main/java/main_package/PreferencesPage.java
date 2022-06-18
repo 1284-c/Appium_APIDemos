@@ -31,7 +31,7 @@ public class PreferencesPage extends Mobile_Gestures{
     @AndroidFindBy(id="android:id/button1")
     MobileElement okbutton;
     public void clickokbutton(){click(okbutton);}
-    @AndroidFindBy(className="android.widget.EditText\n")
+    @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.EditText\n")
     MobileElement wifisettingedit;
 
     public void writewifisetting()
